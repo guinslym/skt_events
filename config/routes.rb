@@ -2,6 +2,7 @@ SktEvents::Application.routes.draw do
   devise_for :users
 
   resources :events
+  match 'users/index' => 'users#index'
 
 
   resources :locations

@@ -59,3 +59,5 @@ gem 'friendly_id'
 gem 'devise'
 gem 'cancan'
 gem 'rolify'
+
+gem 'simple_form'
