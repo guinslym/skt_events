@@ -1,0 +1,6 @@
+<h3>Home</h3>
+<% @events.each do |event| %>
+  <p>
+    Event: #{link_to event.id, event}
+  </p>
+<% end %>

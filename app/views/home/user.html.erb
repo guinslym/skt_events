@@ -1,0 +1,9 @@
+<h3>Home</h3>
+Total Users <%= User.count %>
+
+<% User.all.each do |user| %>
+  <p>
+    <%=  link_to user, "#"  %>
+  </p>
+<% end %>
+
