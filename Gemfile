@@ -50,3 +50,8 @@ group :development do
   #for lorem ipsum data
   gem "faker", "~> 1.2.0"
 end
+
+gem 'nokogiri'
+gem 'geocoder'
+gem 'gmaps4rails'
+gem 'friendly_id'

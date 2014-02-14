@@ -61,6 +61,10 @@ GEM
       i18n (~> 0.5)
     ffi (1.9.3)
     formatador (0.2.4)
+    friendly_id (4.0.10.1)
+      activerecord (>= 3.0, < 4.0)
+    geocoder (1.1.9)
+    gmaps4rails (2.1.1)
     guard (2.4.0)
       formatador (>= 0.2.4)
       listen (~> 2.1)
@@ -100,8 +104,11 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25.1)
+    mini_portile (0.5.2)
     multi_json (1.8.4)
     nio4r (1.0.0)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     polyglot (0.3.3)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -175,10 +182,14 @@ DEPENDENCIES
   bootstrap-sass (~> 2.3.2.2)
   coffee-rails (~> 3.2.1)
   faker (~> 1.2.0)
+  friendly_id
+  geocoder
+  gmaps4rails
   guard-livereload
   guard-rails
   html2haml
   jquery-rails
+  nokogiri
   quiet_assets
   rack-livereload
   rails (= 3.2.15)

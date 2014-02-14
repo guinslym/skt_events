@@ -5,3 +5,38 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'open-uri'
+
+doc = Nokogiri::XML(open('http://localhost/skatepark.xml').read){ |c| c.noblanks }
+
+Location.delete_all
+
+root = doc.root
+#take all the children of root (all the document)
+enfants = root.children
+
+enfants.each do |n|
+  petit_enfant = n.children
+  attribute = {}
+  comptage = 0 #why does it repeat twice #now it's ok I don't need this variable anymore
+  petit_enfant.each do |n| 
+  	comptage = comptage + 1
+		if n.node_name.eql? "Suburbs"
+			attribute[:suburbs] = n.content
+		elsif n.node_name.eql? "Parkname"
+			attribute[:parkname] = n.content
+		elsif n.node_name.eql? "Address"
+			attribute[:address] = n.content
+		elsif n.node_name.eql? "Latitude"
+			attribute[:latitude] = n.content
+		elsif n.node_name.eql? "Longitude"
+			attribute[:longitude] = n.content		
+		end
+		if attribute.count == 5
+			puts attribute
+		end
+	end#do
+	#if comptage == 1
+		Location.create(attribute)
+	#end
+end
