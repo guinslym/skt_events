@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :location_id %><br />
-    <%= f.number_field :location_id %>
+    <%= f.select :location_id, options_from_collection_for_select(Location.all, :id, :parkname)  %>
   </div>
   <div class="actions">
     <%= f.submit %>
