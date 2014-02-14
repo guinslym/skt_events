@@ -17,16 +17,13 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
     #after this line
     ###don't add this line // @location = @event.location.id
-    #@location = Location.find(@event.location.id)
+    @location = Location.find(@event.location.id)
     #then
-=begin
-
     @hash = Gmaps4rails.build_markers(@location) do |location, marker|
       marker.lat location.latitude
       marker.lng location.longitude
       marker.infowindow location.address
     end
-=end
 
     respond_to do |format|
       format.html # show.html.erb
