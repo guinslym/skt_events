@@ -62,4 +62,6 @@ gem 'rolify'
 
 gem 'simple_form'
 gem 'gravtastic'
+
+gem "font-awesome-rails"
 #https://github.com/designium/simple-image-uploader

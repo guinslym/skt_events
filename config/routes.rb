@@ -1,4 +1,10 @@
 SktEvents::Application.routes.draw do
+  get "home/index"
+
+  get "home/user"
+
+  get "home/profile"
+
   devise_for :users
 
   resources :events
