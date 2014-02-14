@@ -1,31 +1,36 @@
-<h1>Listing locations</h1>
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Listing locations</h1>
 
-<table>
-  <tr>
-    <th>Suburbs</th>
-    <th>Parkname</th>
-    <th>Address</th>
-    <th>Latitude</th>
-    <th>Longitude</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+        <table class="table">
+          <tr>
+            <th>Suburbs</th>
+            <th>Parkname</th>
+            <th>Address</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
 
-<% @locations.each do |location| %>
-  <tr>
-    <td><%= location.suburbs %></td>
-    <td><%= location.parkname %></td>
-    <td><%= location.address %></td>
-    <td><%= location.latitude %></td>
-    <td><%= location.longitude %></td>
-    <td><%= link_to 'Show', location %></td>
-    <td><%= link_to 'Edit', edit_location_path(location) %></td>
-    <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+        <% @locations.each do |location| %>
+          <tr>
+            <td><%= location.suburbs %></td>
+            <td><%= location.parkname %></td>
+            <td><%= location.address %></td>
+            <td><%= location.latitude %></td>
+            <td><%= location.longitude %></td>
+            <td><%= link_to 'Show', location %></td>
+            <td><%= link_to 'Edit', edit_location_path(location) %></td>
+            <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+        </table>
 
-<br />
+        <br />
 
 <%= link_to 'New Location', new_location_path %>
+    </div>
+</div>
+

@@ -7,6 +7,7 @@ SktEvents::Application.routes.draw do
 
   resources :locations
   match '/' => 'events#index', via: :get
+  root :to => 'events#index'
 
 
   # The priority is based upon order of creation:

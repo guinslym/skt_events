@@ -1,21 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SktEvents</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-<%= link_to "Events", events_path %><br>
-<%= link_to "Locations", locations_path %>
-<%= link_to "login",  new_user_session_path %>
-<% if current_user %>
-	<%= link_to("Logout", destroy_user_session_path, :method => :delete)%>
-<% end %>
-<%= yield %>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Skt Events" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Skt Events" %>">
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <style type="text/css">
+/* Credit to bootsnipp.com for the css for the color graph */
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+</style>
+  </head>
+  <body>
 
-</body>
+<!-- START NAVBAR -->
+
+    <!-- end NAVBAR-->
+    
+      <header>
+        <%= render 'layouts/navigation' %>
+      </header>
+      <div class="container">
+      <main role="main">
+         <%= render 'layouts/messages' %>
+         <%= yield %>
+      </main>
+    </div>
+
+<script type="text/javascript">
+  
+  $(function(){
+    $('.button-checkbox').each(function(){
+    var $widget = $(this),
+      $button = $widget.find('button'),
+      $checkbox = $widget.find('input:checkbox'),
+      color = $button.data('color'),
+      settings = {
+          on: {
+            icon: 'glyphicon glyphicon-check'
+          },
+          off: {
+            icon: 'glyphicon glyphicon-unchecked'
+          }
+      };
+
+    $button.on('click', function () {
+      $checkbox.prop('checked', !$checkbox.is(':checked'));
+      $checkbox.triggerHandler('change');
+      updateDisplay();
+    });
+
+    $checkbox.on('change', function () {
+      updateDisplay();
+    });
+
+    function updateDisplay() {
+      var isChecked = $checkbox.is(':checked');
+      // Set the button's state
+      $button.data('state', (isChecked) ? "on" : "off");
+
+      // Set the button's icon
+      $button.find('.state-icon')
+        .removeClass()
+        .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+      // Update the button's color
+      if (isChecked) {
+        $button
+          .removeClass('btn-default')
+          .addClass('btn-' + color + ' active');
+      }
+      else
+      {
+        $button
+          .removeClass('btn-' + color + ' active')
+          .addClass('btn-default');
+      }
+    }
+    function init() {
+      updateDisplay();
+      // Inject the icon if applicable
+      if ($button.find('.state-icon').length == 0) {
+        $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+      }
+    }
+    init();
+  });
+});
+</script>
+  </body>
 </html>

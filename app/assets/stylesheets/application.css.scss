@@ -10,5 +10,41 @@
  *
  *= require_self
  *= require_tree .
-*/
-@import "bootstrap";
+ */
+
+ body{
+  padding-top: 60px
+}
+.hidden { display: none; }
+
+/*Copyright*/
+.copyright {
+  font-size: 12px;
+  padding: 11px 0 7px;
+  background: #3e4753;
+  border-top: solid 1px #777; 
+}
+
+.copyright p {
+  color: #dadada;
+}
+
+.copyright p.copyright-space {
+  margin-top: 12px;
+}
+
+.copyright a {
+  margin: 0 5px;
+  color: #72c02c;
+}
+.copyright a:hover {
+  color: #a8f85f;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000000;
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+}
