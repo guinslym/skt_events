@@ -55,3 +55,7 @@ gem 'nokogiri'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'friendly_id'
+
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
