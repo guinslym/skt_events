@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140214013903) do
+ActiveRecord::Schema.define(:version => 20140214014255) do
+
+  create_table "events", :force => true do |t|
+    t.string   "title"
+    t.integer  "location_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "locations", :force => true do |t|
     t.string   "suburbs"
