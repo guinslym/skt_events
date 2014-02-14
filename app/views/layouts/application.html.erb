@@ -11,6 +11,10 @@
        <p class="alert"><%= alert %></p>
 <%= link_to "Events", events_path %><br>
 <%= link_to "Locations", locations_path %>
+<%= link_to "login",  new_user_session_path %>
+<% if current_user %>
+	<%= link_to("Logout", destroy_user_session_path, :method => :delete)%>
+<% end %>
 <%= yield %>
 
 </body>
