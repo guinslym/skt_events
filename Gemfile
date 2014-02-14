@@ -61,3 +61,5 @@ gem 'cancan'
 gem 'rolify'
 
 gem 'simple_form'
+gem 'gravtastic'
+#https://github.com/designium/simple-image-uploader
