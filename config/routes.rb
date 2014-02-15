@@ -1,19 +1,39 @@
 SktEvents::Application.routes.draw do
-  get "home/index"
 
-  get "home/user"
-
-  get "home/profile"
-
+#the ones who has been signed in
+  authenticated :user do
+    root :to => 'home#index'
+  end
+  root :to => 'home#index'
   devise_for :users
 
+  resources :users, :only => [:index, :show] do
+    resources :follows, :only => [:create, :destroy]
+  end
   resources :events
-  match 'users/index' => 'users#index'
-
-
   resources :locations
-  match '/' => 'events#index', via: :get
-  root :to => 'events#index'
+
+  get "home/index"
+  get "home/user"
+  get "home/profile"
+
+
+
+=begin
+Followuser::Application.routes.draw do
+  authenticated :user do
+    root :to => 'home#index'
+  end
+  root :to => "home#index"
+  devise_for :users
+
+  resources :users, :only => [:index, :show] do
+    resources :follows, :only => [:create, :destroy]
+  end
+end
+
+
+=end
 
 
   # The priority is based upon order of creation:

@@ -49,6 +49,7 @@ group :development do
   gem 'rack-livereload'
   #for lorem ipsum data
   gem "faker", "~> 1.2.0"
+  gem 'sextant'
 end
 
 gem 'nokogiri'
@@ -64,4 +65,5 @@ gem 'simple_form'
 gem 'gravtastic'
 
 gem "font-awesome-rails"
+gem "acts_as_follower", '~> 0.1.1'
 #https://github.com/designium/simple-image-uploader

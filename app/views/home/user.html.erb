@@ -1,9 +1,10 @@
 <h3>Home</h3>
-Total Users <%= User.count %>
 
-<% User.all.each do |user| %>
+<% @users.each do |user| %>
   <p>
-    <%=  link_to user, "#"  %>
+    <%=  link_to user.name, :controller => "users", :action => "show", :id => user %> Follow
   </p>
 <% end %>
 
+
+1-877-822-6727

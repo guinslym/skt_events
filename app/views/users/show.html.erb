@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+<div class="" id="follow_user">
+	<%= render :partial => "shared/follow_user", :locals => {:user => @user} %>	
+</div>
+
+
+<% end %>
