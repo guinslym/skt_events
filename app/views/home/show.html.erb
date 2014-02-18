@@ -5,9 +5,8 @@
 
 	<h1><%= @event.title %></h1>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nesciunt, cum, quibusdam quisquam voluptatum similique odit veritatis fuga voluptas assumenda provident ipsa repudiandae tempora omnis optio velit consectetur aspernatur possimus eligendi maxime animi nostrum quasi delectus nobis dolores dolor reiciendis!</p>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium deleniti quod provident possimus animi eius quaerat suscipit quo necessitatibus voluptatum!</p>
+	<p> <%= @event.description %></p>
+	hurry-up! <strong><%= time_ago_in_words @event.event_day %> left</strong>
 
 
 <script src="//maps.google.com/maps/api/js?v=3.13&amp;sensor=false&amp;libraries=geometry" type="text/javascript"></script>
@@ -59,6 +58,8 @@
 
 
 <script type="text/javascript">
+
+
   handler = Gmaps.build('Google');
 handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
   markers = handler.addMarkers(<%=raw @hash.to_json %>);
@@ -69,4 +70,6 @@ handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
   handler.getMap().setZoom(16);
 });
 
+
+handler.map.setOptions({styles: styles});
 </script>

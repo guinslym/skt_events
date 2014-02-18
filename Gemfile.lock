@@ -147,6 +147,9 @@ GEM
       activesupport (= 3.2.15)
       bundler (~> 1.0)
       railties (= 3.2.15)
+    rails-timeago (2.8.1)
+      actionpack (>= 3.1)
+      activesupport (>= 3.1)
     rails_layout (1.0.6)
     railties (3.2.15)
       actionpack (= 3.2.15)
@@ -222,6 +225,7 @@ DEPENDENCIES
   quiet_assets
   rack-livereload
   rails (= 3.2.15)
+  rails-timeago (~> 2.0)
   rails_layout
   rolify
   sass-rails (~> 3.2.3)
