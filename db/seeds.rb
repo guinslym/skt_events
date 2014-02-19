@@ -7,7 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'open-uri'
 
-doc = Nokogiri::XML(open('http://localhost/skatepark.xml').read){ |c| c.noblanks }
+#if the file is in my localhost http://localhost/skatepark.xml
+doc = Nokogiri::XML(open('http://client.mongex.com/skatepark.xml').read){ |c| c.noblanks }
 
 Location.delete_all
 
