@@ -1,5 +1,8 @@
 SktEvents::Application.routes.draw do
 
+  resources :profiles
+
+
 #the ones who has been signed in
   authenticated :user do
     root :to => 'home#index'
@@ -22,6 +25,9 @@ SktEvents::Application.routes.draw do
 
 =begin
 Followuser::Application.routes.draw do
+  resources :profiles
+
+
   authenticated :user do
     root :to => 'home#index'
   end

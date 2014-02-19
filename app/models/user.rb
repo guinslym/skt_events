@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   rolify
+  include Gravtastic
+  gravtastic
   acts_as_follower
   acts_as_followable
   # Include default devise modules. Others available are:
@@ -12,4 +14,6 @@ class User < ActiveRecord::Base
   attr_accessible :role_ids, :as => :admin
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
   
+  has_many :events
+  has_one :profile
 end

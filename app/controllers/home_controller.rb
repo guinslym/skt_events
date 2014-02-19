@@ -13,7 +13,7 @@ class HomeController < ApplicationController
   def show
     #TODO what I have done for Location do it for Event
     @event = Event.find(params[:id])
-    @user = User.find(@event.user_id)
+    @user = User.find(@event.user_id) 
     #after this line
     ###don't add this line // @location = @event.location.id
     @location = Location.find(@event.location.id)
