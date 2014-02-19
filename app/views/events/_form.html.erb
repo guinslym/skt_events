@@ -19,6 +19,10 @@
     <%= f.label :location_id %><br />
     <%= f.select :location_id, options_from_collection_for_select(Location.all, :id, :parkname)  %>
   </div>
+    <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

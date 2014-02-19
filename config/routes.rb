@@ -20,6 +20,7 @@ SktEvents::Application.routes.draw do
   get "home/user"
   get "home/profile"
   get "home/show"
+  post "home/new"
 
 
 
