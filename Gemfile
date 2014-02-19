@@ -68,4 +68,5 @@ gem 'gravtastic'
 gem "font-awesome-rails"
 gem "acts_as_follower", '~> 0.1.1'
 gem 'rails-timeago', '~> 2.0'
+gem 'ckeditor_rails'
 #https://github.com/designium/simple-image-uploader

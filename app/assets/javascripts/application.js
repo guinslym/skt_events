@@ -17,6 +17,6 @@
 
 //= require underscore
 //= require gmaps/google
-
+//= require ckeditor-jquery
 
 //= require bootstrap/bootstrap

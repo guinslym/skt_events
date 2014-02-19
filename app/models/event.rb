@@ -4,4 +4,6 @@ class Event < ActiveRecord::Base
   belongs_to :user
 
   resourcify
+  default_scope lambda { order('events.event_day') }
+
 end

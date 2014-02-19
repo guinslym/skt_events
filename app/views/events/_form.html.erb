@@ -21,8 +21,13 @@
   </div>
     <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description, cols: 15, rows: 15, class: 'ckeditor' %>
   </div>
+ <div class="field">
+   <%= f.label :event_day %><br>
+   <%= f.datetime_select :event_day %>
+</div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
