@@ -32,15 +32,15 @@ end
 
 
     <div class="row">
-    	<div class="col-lg-8 col-md-offset-2">
+    	<div class="col-lg-8 col-md-offset-2 square">
     		
     	
         <h1>Upcoming Skating Events</h1>
 
        <% @events.each do |event| %>
-        <div class="col-md-12">
+        <div class="col-md-12 skate">
             <div class="blockquote-box <%= bloquote %>">
-                <div class="square pull-left">
+                <div class="square pull-left skate">
                    <span class="<%= image %>"></span>
                 </div>
                 <h3><%= link_to event.title, controller: '/home' , action: 'show' , id: event.id %></h3>

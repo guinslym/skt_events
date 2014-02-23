@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
    before_filter :authenticate_user!
   def index
-  	@events = Event.page(params[:page]).per(3)
+  	@events = Event.recent.page(params[:page]).per(3)
   end
 
   def user

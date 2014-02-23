@@ -8,4 +8,6 @@ class Event < ActiveRecord::Base
 
   acts_as_followable
 
+  scope :recent, lambda { where("events.event_day > ?", Date.today) }
+
 end
