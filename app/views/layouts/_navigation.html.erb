@@ -31,7 +31,11 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
+              <% if current_user %>
               <%= link_to "logout", destroy_user_session_path, :method => :delete %>
+              <% else %>
+                <%= link_to "Sign in ", new_user_session_path %>
+              <% end %>
 </li>
 <li><%= %></li>
 <!--

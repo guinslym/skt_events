@@ -6,4 +6,6 @@ class Event < ActiveRecord::Base
   resourcify
   default_scope lambda { order('events.event_day') }
 
+  acts_as_followable
+
 end

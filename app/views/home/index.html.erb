@@ -46,7 +46,7 @@ end
                 <h3><%= link_to event.title, controller: '/home' , action: 'show' , id: event.id %></h3>
                    
                 <p>
-                    <%= event.description %>
+                    <%= raw event.description %>
                 </p>
                 <strong><%= time_ago_in_words event.event_day %> left</strong>
             </div>
@@ -56,5 +56,4 @@ end
 
     </div>
 </div>
-
 
