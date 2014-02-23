@@ -1,0 +1,274 @@
+<DocumentElement>
+  <Skatepark>
+    <id>1</id>
+    <Suburbs>ACACIA RIDGE</Suburbs>
+    <Parkname>James Freney Park</Parkname>
+    <Address>Achievement Crescent, Acacia Ridge</Address>
+    <Latitude>-27.58112</Latitude>
+    <Longitude>153.01048</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>2</id>
+    <Suburbs>BANYO</Suburbs>
+    <Parkname>Nudgee Recreation Reserve</Parkname>
+    <Address>Elliott Rd, Banyo</Address>
+    <Latitude>-27.36498</Latitude>
+    <Longitude>153.08172</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>3</id>
+    <Suburbs>BANYO</Suburbs>
+    <Parkname>Banyo Memorial Park</Parkname>
+    <Address>St Vincents Rd, Banyo</Address>
+    <Latitude>-27.37401</Latitude>
+    <Longitude>153.07837</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>4</id>
+    <Suburbs>BELLBOWRIE</Suburbs>
+    <Parkname>Booker Place Park</Parkname>
+    <Address>Sugarwood Street, Bellbowrie</Address>
+    <Latitude>-27.565048</Latitude>
+    <Longitude>152.890999</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>5</id>
+    <Suburbs>BRACKEN RIDGE</Suburbs>
+    <Parkname>Fred Francis Park</Parkname>
+    <Address>Playford St, Bracken Ridge</Address>
+    <Latitude>-27.31371</Latitude>
+    <Longitude>153.04028</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>6</id>
+    <Suburbs>BRIDGEMAN DOWNS</Suburbs>
+    <Parkname>Streisand Drive Park</Parkname>
+    <Address>Streisand Drive, Bridgeman Downs</Address>
+    <Latitude>-27.37291</Latitude>
+    <Longitude>152.98204</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>7</id>
+    <Suburbs>CARINDALE</Suburbs>
+    <Parkname>Meadowlands Picnic Ground</Parkname>
+    <Address>Meadowlands Rd, Carindale</Address>
+    <Latitude>-27.488819</Latitude>
+    <Longitude>153.12139</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>8</id>
+    <Suburbs>COORPAROO</Suburbs>
+    <Parkname>The Common Park</Parkname>
+    <Address>Cambridge St, Coorparoo</Address>
+    <Latitude>-27.48869</Latitude>
+    <Longitude>153.05174</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>9</id>
+    <Suburbs>DEAGON</Suburbs>
+    <Parkname>Deagon Sportground Park</Parkname>
+    <Address>Cnr Kempster St and Board St, Deagon</Address>
+    <Latitude>-27.319582</Latitude>
+    <Longitude>153.058262</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>10</id>
+    <Suburbs>FAIRFIELD</Suburbs>
+    <Parkname>JF O'Grady Memorial Park</Parkname>
+    <Address>Cnr Home St and Brougham St, Fairfield</Address>
+    <Latitude>-27.506178</Latitude>
+    <Longitude>153.0232</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>11</id>
+    <Suburbs>FERNY GROVE</Suburbs>
+    <Parkname>Ferny Grove Picnic Ground Park</Parkname>
+    <Address>Samford Rd, Ferny Grove</Address>
+    <Latitude>-27.4043</Latitude>
+    <Longitude>152.9381</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>12</id>
+    <Suburbs>HOLLAND PARK WEST</Suburbs>
+    <Parkname>Glindemann Park</Parkname>
+    <Address>Logan Rd Opposite Pickthorne St, Holland Park West</Address>
+    <Latitude>-27.52757</Latitude>
+    <Longitude>153.07088</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>13</id>
+    <Suburbs>INALA</Suburbs>
+    <Parkname>DJ Sherrington Park</Parkname>
+    <Address>Inala Ave, Inala</Address>
+    <Latitude>-27.59721</Latitude>
+    <Longitude>152.98646</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>14</id>
+    <Suburbs>INALA</Suburbs>
+    <Parkname>Thrush Street Park</Parkname>
+    <Address>Swallow St, Inala</Address>
+    <Latitude>-27.59941</Latitude>
+    <Longitude>152.97833</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>15</id>
+    <Suburbs>JAMBOREE HEIGHTS</Suburbs>
+    <Parkname>Beanland Street Park</Parkname>
+    <Address>Beanland St, Jamboree Heights</Address>
+    <Latitude>-27.55228</Latitude>
+    <Longitude>152.92958</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>16</id>
+    <Suburbs>JINDALEE</Suburbs>
+    <Parkname>Amazon Place Park</Parkname>
+    <Address>Centenary Highway, Jindalee</Address>
+    <Latitude>-27.52924</Latitude>
+    <Longitude>152.94709</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>17</id>
+    <Suburbs>KANGAROO POINT</Suburbs>
+    <Parkname>Raymond Park</Parkname>
+    <Address>Wellington Rd, Kangaroo Point</Address>
+    <Latitude>-27.48065</Latitude>
+    <Longitude>153.04047</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>18</id>
+    <Suburbs>KURABY</Suburbs>
+    <Parkname>Wally Tate Park</Parkname>
+    <Address>Beenleigh Rd, Kuraby</Address>
+    <Latitude>-27.600537</Latitude>
+    <Longitude>153.092165</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>19</id>
+    <Suburbs>LOTA</Suburbs>
+    <Parkname>Ed Devenport Rotary Park</Parkname>
+    <Address>Bowering St, Lota</Address>
+    <Latitude>-27.47032</Latitude>
+    <Longitude>153.19004</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>20</id>
+    <Suburbs>MOOROOKA</Suburbs>
+    <Parkname>Muriel Avenue Park</Parkname>
+    <Address>Muriel Ave, Moorooka</Address>
+    <Latitude>-27.54366</Latitude>
+    <Longitude>153.01558</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>21</id>
+    <Suburbs>MURARRIE</Suburbs>
+    <Parkname>Murarrie Recreation Ground</Parkname>
+    <Address>Wynnum Rd, Murarrie</Address>
+    <Latitude>-27.467003</Latitude>
+    <Longitude>153.104482</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>22</id>
+    <Suburbs>NORMAN PARK</Suburbs>
+    <Parkname>Perth Street Park</Parkname>
+    <Address>McIlwraith Ave, Norman Park</Address>
+    <Latitude>-27.48547</Latitude>
+    <Longitude>153.07423</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>23</id>
+    <Suburbs>NUDGEE</Suburbs>
+    <Parkname>Nudgee Recreation Reserve</Parkname>
+    <Address>Elliott Rd, Nudgee</Address>
+    <Latitude>-27.362811</Latitude>
+    <Longitude>153.081608</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>24</id>
+    <Suburbs>NUNDAH</Suburbs>
+    <Parkname>Ross Park</Parkname>
+    <Address>Parkland St, Nundah</Address>
+    <Latitude>-27.40928</Latitude>
+    <Longitude>153.05863</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>25</id>
+    <Suburbs>NUNDAH</Suburbs>
+    <Parkname>Plaisted Place Park</Parkname>
+    <Address>Flower St, Nundah</Address>
+    <Latitude>-27.39166</Latitude>
+    <Longitude>153.06237</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>26</id>
+    <Suburbs>PADDINGTON</Suburbs>
+    <Parkname>Neal Macrossan Playground Park</Parkname>
+    <Address>Caroline St, Paddington</Address>
+    <Latitude>-27.461957</Latitude>
+    <Longitude>153.010411</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>27</id>
+    <Suburbs>STAFFORD</Suburbs>
+    <Parkname>Grinstead Park</Parkname>
+    <Address>Shand St, Stafford</Address>
+    <Latitude>-27.416424</Latitude>
+    <Longitude>153.000798</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>28</id>
+    <Suburbs>STAFFORD HEIGHTS</Suburbs>
+    <Parkname>Webster Road Park</Parkname>
+    <Address>Webster Rd, Stafford Heights</Address>
+    <Latitude>-27.39473</Latitude>
+    <Longitude>153.01943</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>29</id>
+    <Suburbs>SUNNYBANK</Suburbs>
+    <Parkname>Les Atkinson Park</Parkname>
+    <Address>Woff St, Sunnybank</Address>
+    <Latitude>-27.581671</Latitude>
+    <Longitude>153.05234</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>30</id>
+    <Suburbs>THE GAP</Suburbs>
+    <Parkname>Walton Bridge Reserve</Parkname>
+    <Address>Glenaffric St, The Gap</Address>
+    <Latitude>-27.445753</Latitude>
+    <Longitude>152.954192</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>31</id>
+    <Suburbs>TOOMBUL</Suburbs>
+    <Parkname>Ross Park</Parkname>
+    <Address>Sandgate Rd, Toombul</Address>
+    <Latitude>-27.408462</Latitude>
+    <Longitude>153.058777</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>32</id>
+    <Suburbs>UPPER MT GRAVATT</Suburbs>
+    <Parkname>Hibiscus Gardens Complex</Parkname>
+    <Address>Klumpp Rd, Upper Mt Gravatt</Address>
+    <Latitude>-27.55228</Latitude>
+    <Longitude>153.07345</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>33</id>
+    <Suburbs>WAVELL HEIGHTS</Suburbs>
+    <Parkname>Edinburgh Castle Road Park</Parkname>
+    <Address>Edinburgh Castle Rd, Wavell Heights</Address>
+    <Latitude>-27.40141</Latitude>
+    <Longitude>153.03904</Longitude>
+  </Skatepark>
+  <Skatepark>
+    <id>34</id>
+    <Suburbs>WOOLOOWIN</Suburbs>
+    <Parkname>Melrose Park</Parkname>
+    <Address>Roseleigh St, Wooloowin</Address>
+    <Latitude>-27.411662</Latitude>
+    <Longitude>153.045259</Longitude>
+  </Skatepark>
+</DocumentElement>

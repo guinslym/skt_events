@@ -7,8 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'open-uri'
 
+
+file = Rails.root.join('app', 'assets', 'xml').to_s
+
 #if the file is in my localhost http://localhost/skatepark.xml
-doc = Nokogiri::XML(open('http://client.mongex.com/skatepark.xml').read){ |c| c.noblanks }
+doc = Nokogiri::XML(open(file + '/skatepark.xml').read){ |c| c.noblanks }
+
 
 Location.delete_all
 
@@ -41,3 +45,4 @@ enfants.each do |n|
 		Location.create(attribute)
 	#end
 end
+
