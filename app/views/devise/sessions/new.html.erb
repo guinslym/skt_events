@@ -1,68 +1,14 @@
-<style type="text/css">
-
-form
-{
-    width: 250px;
-    margin: 0 auto;
-}
-
-form.login input[type="text"], form.login input[type="password"]
-{
-    width: 100%;
-    margin: 0;
-    padding: 5px 10px;
-    background: 0;
-    border: 0;
-    border-bottom: 1px solid #FFFFFF;
-    outline: 0;
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-    color: #FFFFFF;
-    outline: 0;
-}
-
-form.login input[type="submit"]
-{
-    width: 100%;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-top: 16px;
-    outline: 0;
-    cursor: pointer;
-    letter-spacing: 1px;
-}
-
-form.login input[type="submit"]:hover
-{
-    transition: background-color 0.5s ease;
-}
-label{
-      color: #127A7F;
-    font-family: Bree Serif,serif;
-    font-weight: normal;
-    text-shadow: 2px 1px #FCF4DC;
-    font-size: 1.7rem;
-}
-
-
-
-</style>
-
 <div class="row">
 	<div class="col-lg-12 ">
 		
 
-		<h2 form-title>Sign in</h2>
+		<h2 form-title class="form-title">Sign in</h2>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
+<%= form_for(resource, :as => resource_name ,:url => session_path(resource_name)) do |f| %>
+  <div><%= f.label :email, :class => "label" %><br />
   <%= f.email_field :email, :autofocus => true %></div>
 
-  <div><%= f.label :password %><br />
+  <div><%= f.label :password, :class => "label" %><br />
   <%= f.password_field :password , :class => "show-pass-reset" %></div>
 
   <% if devise_mapping.rememberable? -%>

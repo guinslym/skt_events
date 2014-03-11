@@ -1,11 +1,15 @@
 class HomeController < ApplicationController
-   before_filter :authenticate_user!
+   before_filter :authenticate_user!, except: [:index]
   def index
   	@events = Event.recent.page(params[:page]).per(3)
   end
 
   def user
   	@users = User.all
+  end
+
+  def locations
+    @locations = Location.all
   end
 
   def profile

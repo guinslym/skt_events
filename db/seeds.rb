@@ -10,7 +10,7 @@ require 'open-uri'
 
 file = Rails.root.join('app', 'assets', 'xml').to_s
 
-#if the file is in my localhost http://localhost/skatepark.xml
+#if the file is in my application root
 doc = Nokogiri::XML(open(file + '/skatepark.xml').read){ |c| c.noblanks }
 
 

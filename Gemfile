@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.15'
+ruby '2.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
+gem 'pg', group: :production
 
 
 # Gems used only for assets and not required
@@ -51,6 +53,7 @@ group :development do
   #for lorem ipsum data
   gem "faker", "~> 1.2.0"
   gem 'sextant'
+  gem 'sqlite3'
 end
 
 gem 'nokogiri'

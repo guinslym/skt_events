@@ -28,6 +28,64 @@
   background-color: white;
 }
 </style>
+<style type="text/css">
+
+form.new_user
+{
+    width: 250px;
+    margin: 0 auto;
+}
+
+form.login input[type="text"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
+
+form.login input[type="submit"]
+{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+form.login input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+label.label{
+      color: #127A7F;
+    font-family: Bree Serif,serif;
+    font-weight: normal;
+    text-shadow: 2px 1px #FCF4DC;
+    font-size: 1.7rem;
+    line-height: 1.4em;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.form-title{
+  color:red;
+}
+
+
+</style>
   </head>
   <body>
 
@@ -44,68 +102,5 @@
          <%= yield %>
       </main>
     </div>
-
-<script type="text/javascript">
- /* 
-  $(function(){
-    $('.button-checkbox').each(function(){
-    var $widget = $(this),
-      $button = $widget.find('button'),
-      $checkbox = $widget.find('input:checkbox'),
-      color = $button.data('color'),
-      settings = {
-          on: {
-            icon: 'glyphicon glyphicon-check'
-          },
-          off: {
-            icon: 'glyphicon glyphicon-unchecked'
-          }
-      };
-
-    $button.on('click', function () {
-      $checkbox.prop('checked', !$checkbox.is(':checked'));
-      $checkbox.triggerHandler('change');
-      updateDisplay();
-    });
-
-    $checkbox.on('change', function () {
-      updateDisplay();
-    });
-
-    function updateDisplay() {
-      var isChecked = $checkbox.is(':checked');
-      // Set the button's state
-      $button.data('state', (isChecked) ? "on" : "off");
-
-      // Set the button's icon
-      $button.find('.state-icon')
-        .removeClass()
-        .addClass('state-icon ' + settings[$button.data('state')].icon);
-
-      // Update the button's color
-      if (isChecked) {
-        $button
-          .removeClass('btn-default')
-          .addClass('btn-' + color + ' active');
-      }
-      else
-      {
-        $button
-          .removeClass('btn-' + color + ' active')
-          .addClass('btn-default');
-      }
-    }
-    function init() {
-      updateDisplay();
-      // Inject the icon if applicable
-      if ($button.find('.state-icon').length == 0) {
-        $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
-      }
-    }
-    init();
-  });
-});
-*/
-</script>
   </body>
 </html>
