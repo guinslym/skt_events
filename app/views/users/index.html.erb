@@ -1,5 +1,6 @@
+<% if can? :manage, @users %>
 <h3>Users</h3>
-<div class="span8">
+<div class="col-lg-12 square">
   <table class="table table-condensed">
     <thead>
       <tr>
@@ -43,3 +44,10 @@
     </tbody>
   </table>
 </div>
+
+<% else %>
+<script type="text/javascript">
+    window.location.href="/home/index"  // put your correct path in a string here
+</script>
+
+<% end %>

@@ -12,6 +12,7 @@
 user_events_ids = current_user.events.find(:all,:select=>'id').map(&:id)
 if user_events_ids.include?(@event.id) %>
 <br>
+
   <%= link_to 'Edit', edit_event_path(@event) %>
   <% end %>
 <script src="//maps.google.com/maps/api/js?v=3.13&amp;sensor=false&amp;libraries=geometry" type="text/javascript"></script>

@@ -12,6 +12,10 @@ class HomeController < ApplicationController
     @locations = Location.all
   end
 
+  def Credit
+    
+  end
+
   def profile
   end
 

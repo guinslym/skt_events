@@ -1,37 +1,46 @@
-<div class="row">
-  <div class="col-lg-12 square">
-    <%= paginate @events %>
-    
+<% if can? :manage, @events %>
+  <div class="row square">
+    <div class="col-lg-12 square">
+      <%= paginate @events %>
+      
 
-<h1>Listing events <%= fa_icon "camera-retro 2x", class: "muted pull-left" %></h1>
-<h3><%= fa_stacked_icon "twitter", base: "square-o" %> </h3>
+  <h1>Listing events <%= fa_icon "camera-retro 2x", class: "muted pull-left" %></h1>
+  <h3><%= fa_stacked_icon "twitter", base: "square-o" %> </h3>
 
-<table class="table">
-  <tr>
-    <th>Title</th>
-    <th>Location_id</th>
-    <th>Location_name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <table class="table">
+    <tr>
+      <th>Title</th>
+      <th>Location_id</th>
+      <th>Location_name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
 
-<% @events.each do |event| %>
-  <tr>
-    <td><%= event.title %></td>
-    <td><%= event.location_id %></td>
-    <td><%= Location.find(event.location_id).parkname %></td>
-    <td><%= link_to 'Show', event %></td>
-    <td><%= link_to 'Edit', edit_event_path(event) %></td>
-    <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+  <% @events.each do |event| %>
+    <tr>
+      <td><%= event.title %></td>
+      <td><%= event.location_id %></td>
+      <td><%= Location.find(event.location_id).parkname %></td>
+      <td><%= link_to 'Show', event %></td>
+      <td><%= link_to 'Edit', edit_event_path(event) %></td>
+      <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </table>
 
-<br />
+  <br />
 
-<%= link_to 'New Event', new_event_path %>
+  <%= link_to 'New Event', new_event_path %>
 
 
+    </div>
   </div>
-</div>
+
+
+<% else %>
+<script type="text/javascript">
+    window.location.href="/home/index"  // put your correct path in a string here
+</script>
+
+<% end %>

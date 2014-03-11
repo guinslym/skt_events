@@ -1,4 +1,7 @@
-<div class="row">
+<% 
+user_events_ids = current_user.events.find(:all,:select=>'id').map(&:id)
+if user_events_ids.include?(@event.id) %>
+<div class="row ">
   <div class="col-lg-8 col-md-offset-2 square">
 		<h1>Editing event</h1>
 
@@ -9,4 +12,10 @@
 
 	</div>
 </div>
+
+<% else %>
+<script type="text/javascript">
+    window.location.href="/home/index"  // put your correct path in a string here
+</script>
+<% end %>
 

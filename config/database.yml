@@ -18,11 +18,12 @@ test:
   pool: 5
   timeout: 5000
 
-development:
-  adapter: postgresql
-  encoding: utf8
-  database: skteevents_development
-  pool: 5
-  username: 
-  password: 
-  socket: 
+#development:
+ # adapter: postgresql
+ # encoding: utf8
+ # database: skteevents_development
+ # pool: 5
+ # username: 
+ # password: 
+ # socket: 
+

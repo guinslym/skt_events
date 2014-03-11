@@ -1,6 +1,7 @@
-<p id="notice"><%= notice %></p>
+<div class="col-lg-12 square">
 
-<p>
+<p id="notice"><%= notice %></p>
+	<p>
   <b>Name:</b>
   <%= @profile.name %>
 </p>
@@ -11,5 +12,11 @@
 </p>
 
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Edit', edit_profile_path(@profile) %> 
+<% end %>
+|
 <%= link_to 'Back', profiles_path %>
+
+</div>
+
+

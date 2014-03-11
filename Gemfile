@@ -56,9 +56,9 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'nokogiri'
-gem 'geocoder'
-gem 'gmaps4rails'
+gem 'nokogiri'#xml file
+gem 'geocoder'#google maps
+gem 'gmaps4rails'#google maps
 gem 'friendly_id'
 
 gem 'devise'

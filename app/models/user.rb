@@ -15,5 +15,14 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
   
   has_many :events
-  has_one :profile
+  has_one :profile, dependent: :delete
+
+ 
+  after_create :assign_default_role
+
+  def assign_default_role
+    add_role(:visitor)
+  end
+
+
 end

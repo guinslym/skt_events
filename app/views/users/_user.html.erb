@@ -1,4 +1,4 @@
-<div class="modal" id="role-options-<%= user.id %>" style="display: none;">
+<div class="modal square" id="role-options-<%= user.id %>" style="display: none;">
   <%= simple_form_for user, :url => events_path(user), :html => {:method => :put, :class => 'form-horizontal' } do |f| %>
     <div class="modal-header">
       <a class="close" data-dismiss="modal">×</a>

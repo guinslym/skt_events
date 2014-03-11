@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'open-uri'
 
-
+#file is in app/assets/xml
 file = Rails.root.join('app', 'assets', 'xml').to_s
 
-#if the file is in my application root
+#if the file is in app/assets/xml
 doc = Nokogiri::XML(open(file + '/skatepark.xml').read){ |c| c.noblanks }
 
 
@@ -45,4 +45,3 @@ enfants.each do |n|
 		Location.create(attribute)
 	#end
 end
-
