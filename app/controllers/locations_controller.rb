@@ -15,9 +15,9 @@ class LocationsController < ApplicationController
   def show
     @location = Location.find(params[:id])
     @hash = Gmaps4rails.build_markers(@location) do |location, marker|
-      marker.lat location.latitude
-      marker.lng location.longitude
-      marker.infowindow location.address
+      marker.lat location.latitude #latitude
+      marker.lng location.longitude #longitude
+      marker.infowindow location.address #info windows
     end
     
 

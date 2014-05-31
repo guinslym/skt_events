@@ -68,6 +68,7 @@ if user_events_ids.include?(@event.id) %>
   handler = Gmaps.build('Google');
 handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
   markers = handler.addMarkers(<%=raw @hash.to_json %>);
+  console.log(markers);
   handler.bounds.extendWith(markers);
   //customization
   handler.map.centerOn([<%= @location.latitude %>, <%= @location.longitude %>]);

@@ -52,13 +52,17 @@
 </div>
 
 
+<%#=raw @hash.to_json %>
 
 
 
 <script type="text/javascript">
+
   handler = Gmaps.build('Google');
 handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-  markers = handler.addMarkers(<%=raw @hash.to_json %>);
+  markers = handler.addMarkers([{"lat":-27.58112,"lng":153.01048,"infowindow":"Achievement Crescent, Acacia Ridge"},{"lat":-27.58132,"lng":153.01048,"infowindow":"Achievement Crescent, Acacia Ridge"},{"lat":-27.58136,"lng":153.01143,"infowindow":"Achievement Crescent, Acacia Ridge"}] );
+  console.log(markers);
+
   handler.bounds.extendWith(markers);
   //customization
   handler.map.centerOn([<%= @location.latitude %>, <%= @location.longitude %>]);
