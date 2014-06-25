@@ -5,7 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-require 'open-uri'
+#require 'open-uri'
+
+%w{open-uri faker nokogiri}.each { |x| puts require x }
+
 
 #file is in app/assets/xml
 file = Rails.root.join('app', 'assets', 'xml').to_s
@@ -45,3 +48,4 @@ enfants.each do |n|
 		Location.create(attribute)
 	#end
 end
+
